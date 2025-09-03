@@ -9,10 +9,18 @@
 
 ## Git Configuration  
 ### Repository Setup  
-- **GitHub Repository:** https://github.com/Fred727wysi/cccs106-projects  
+- **GitHub Repository:** [https://github.com/Fred727wysi/cccs106-projects](https://github.com/Fred727wysi/cccs106-projects)  
 - **Local Repository:** ✅ Initialized and connected  
-- **Commit History:** 1 commit  
-  - 8417cc0 Initial commit with week1 and week2 labs
+- **Commit History:** 8 commits  
+  - `d5fc3cf` added enchanced calculator  
+  - `168bf18` Add placeholder file to keep module1_final folder  
+  - `05b6761` Add week1 lab files (report + python programs)  
+  - `6847bd3` Add Week 2 labs: hello_flet.py and personal_info_gui.py  
+  - `bfb6086` Organized repo into required structure  
+  - `8f2e09a` edited lab report md for week 2 labs, added ss1, ss2. added module1 folder  
+  - `48557d8` Add placeholder for enhanced calculator GUI  
+  - `5557df9` Initial commit: Add project structure and README  
+
 
 
 ### Git Skills Demonstrated  
@@ -63,6 +71,31 @@ Another problem was I got confused with git push because the remote repo already
 
 Even if the repo structure was not exactly same at first, the python programs like hello_flet.py and personal_info_gui.py was working fine when I run them, so the functionality was not affected, just the file organization.
 
+# Challenges and Solutions for CCCS106 Projects
+
+## Challenge 1: Wrong Repository Structure
+- **Problem:** Initial repo didn’t match required format.
+- **Solution:** Reorganized folders into week1_labs, week2_labs, module1_final, and added README.md.
+
+## Challenge 2: .gitignore Missing
+- **Problem:** `.gitignore` file was not included, causing `cccs106_env` to appear in repo.
+- **Solution:** Created `.gitignore` to exclude virtual environments.
+
+## Challenge 3: Remote Rejection Error
+- **Problem:** `git push` failed with "fetch first" error.
+- **Solution:** Pulled remote changes before pushing, then used `--force` when necessary.
+
+## Challenge 4: Lost Files Scare
+- **Problem:** After push, files appeared gone.
+- **Solution:** Used `git log`, `git checkout HEAD -- .` to verify and recover files.
+
+## Challenge 5: Empty Folder Not Pushing
+- **Problem:** Git does not track empty directories.
+- **Solution:** Added `.gitkeep` placeholder file in `module1_final/`.
+
+## Challenge 6: Commit History Out of Order
+- **Problem:** Enhanced Calculator was added late, breaking commit sequence.
+- **Solution:** Rewrote commit history using `git reset --soft` and re-commits.
 
 ---
 
@@ -74,8 +107,8 @@ I learned how to properly organize repo structure with week1 and week2 labs. Als
 ## Screenshots  
 
 ### Git Repository  
-- [ ] GitHub repository with commit history  
-- [ ] Local git log showing commits  
+![GitHub repository with commit history](lab2_screenshots/ss3.png) 
+![Local git log showing commits ](lab2_screenshots/ss4.png)
 
 ### GUI Applications  
 
